@@ -1,0 +1,128 @@
+
+/* Oculta o header padrão do Streamlit */
+header[data-testid="stHeader"] {
+    display: none;
+}
+/* Formata containers */
+div[data-testid="stVerticalBlock"] > div:first-child {
+    max-width: 100%;
+    /* margin: 0 auto;  */
+    /* padding: 1rem 1rem;  */
+    background-color: white;
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+    margin-top: 0rem !important;
+    overflow: hidden;
+    /* padding: 1rem 1rem !important; */
+}
+/* Remove margens extras padrão do body do Streamlit e adiciona cor de fundo cinza claro*/  
+section.stMain > div {
+    padding-top: 0rem;
+    /* border: 1px solid red; */
+    background-color: #f9f9f9;
+}
+/*Ajustando o tamanho do conteúdo da página*/
+div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Também remove margem/padding do pai imediato (caso exista) */
+div[data-testid="stHeadingWithActionElements"] > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    /* padding-bottom: 0 !important; */
+}
+
+
+/**/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.background-image {
+    width: 100%;
+    max-height: 150px;
+    max-width: 1160px;
+    object-fit: cover;
+}
+.icon-container {
+    position: absolute;
+    bottom: 20px; /* Valor base para o alinhamento vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+.linkedin-icon {
+    left: 36%;
+    bottom: -12px; /* Ajuste fino para alinhar verticalmente com o da direita */
+}
+.github-icon {
+    right: 36%;
+}
+.icon-circle {
+    width: 35vw; /* ou 30%, depende do layout desejado */
+    max-width: 50px; /* limite máximo */
+    min-width: 30px;       /* (Opcional) Limite mínimo em telas pequenas */
+    aspect-ratio: 1 / 1; /* mantém formato circular */
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid white; /* Borda para visualização */
+}
+.icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.profile-circle {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17%; /* ou use % baseado no container */
+    max-width: 250px;
+    min-width: 100px;
+    aspect-ratio: 1 / 1; /* mantém o formato circular */
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid white;
+    z-index: 3;
+}
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* css quadro habilidades */
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
