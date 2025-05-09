@@ -126,3 +126,69 @@ body {
     background-color: #f9f9f9;
 }
 
+/* quadro habilidades */
+.skill-card {
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 40%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* quadro de projetos */
+.project-card {
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 475px;
+    max-height: 475px;
+    overflow: hidden;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+.project-card h5 {
+    margin: 0.5rem 0;
+}
+.project-card p {
+    flex-grow: 1;
+    margin: 0.5rem 0;
+    text-align: justify;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Número máximo de linhas visíveis */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+.project-links {
+    margin-top: auto;
+}
+.project-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+.project-links a:hover {
+    text-decoration: underline;
+}

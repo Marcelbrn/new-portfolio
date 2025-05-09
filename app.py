@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from funcs import load_css
+from funcs import load_css, technical_skills, projects
 
 # ===== Configurando variáveis com os caminhos imagens ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/marcel-portfolio/raw/6721ec536e4cdd14fa4748889c45cfd9ef3a00c0/img/img_marcel.png"
@@ -21,6 +21,30 @@ habilidades_tecnicas = {
     "DevOps & Ferramentas": ["Airflow", "Docker, Kubernetes","Terraform, CI/CD", "Streamlit, Power BI"],
     "Cloud & Processamento": ["AWS, Azure, GCP", "Databricks", "Snowflake", "BigQuery"],
 }
+
+projetos = [
+    {
+        "nm_projeto": "Portfólio",
+        "desc_projeto": "Projeto criado para apresentar minhas experiências, certificações e habilidades técnicas de forma interativa por meio de projetos com o objetivo de destacar meu perfil profissional de maneira clara, organizada e atrativa.",
+        "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
+        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
+        "tec_prohjeto": "Python, Streamlit, CSS"
+    },
+    {
+        "nm_projeto": "Portfólio",
+        "desc_projeto": "Implementação de página web para apresentação de portfólio profissional, destacando projetos, habilidades e experiências.",
+        "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
+        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/322893482f15ac1d2237667e0a568d1abe5d9797/img/img_portfolio_gpt5.png",
+        "tec_prohjeto": "Python, Streamlit, CSS"
+    },
+    {
+        "nm_projeto": "Portfólio",
+        "desc_projeto": "Implementação de página web para apresentação de portfólio profissional, destacando projetos, habilidades e experiências fjsdljlfasdd jlfasdjlk  jfsdjlkjfsadl jflsdjjfksdjhk bkjerwiurkjlksd jfsdlj.",
+        "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
+        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
+        "tec_prohjeto": "Python, Streamlit, CSS"
+    }
+]
 
 # ===== Configurações da página como: layout da página, nome e icone na aba do navegador ===== #
 st.set_page_config(page_title = "Marcel Bruno - Portfólio", page_icon = "📑", layout = "wide")
@@ -82,5 +106,10 @@ with st.container(border=0):
             """, unsafe_allow_html=True)
 
     with col2:
-        #st.image(v_img_txt_sobre, width=200)
         st.image(v_img_txt_sobre, width=255)
+
+    # Adicionando quadro de habilidades
+    technical_skills(habilidades_tecnicas)
+
+    # Adicionando quadro de projetos
+    projects(projetos)
