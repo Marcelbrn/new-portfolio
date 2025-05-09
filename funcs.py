@@ -42,4 +42,22 @@ def projects(v_projetos):
                             <a href="{projeto['link_projeto']}" target="_blank">🔗GitHub</a>
                         </div>
                     </div>
-                """, unsafe_allow_html=True)            
+                """, unsafe_allow_html=True)
+         
+
+# ===== Definindo função para gerar quadro de certificações ===== #
+def certification(v_certificacoes):
+    st.markdown("### 🏅 Certificações")
+    cols = st.columns(4)
+    for idx, cert in enumerate(v_certificacoes):
+        with cols[idx % 4]:
+            st.markdown(
+                f"""
+                    <div class="cert-card">
+                        <a href="{cert['link_cert']}" target="_blank">
+                            <img class="cert-image" src="{cert['img_cert']}">
+                        </a>
+                        <h5>{cert['tp_cert']}</h5>
+                        <h6>{cert['nm_cert']}</h6>
+                    </div>
+                """, unsafe_allow_html=True)                     

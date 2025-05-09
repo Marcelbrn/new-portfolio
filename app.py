@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from funcs import load_css, technical_skills, projects
+from funcs import load_css, technical_skills, projects, certification
 
 # ===== Configurando variáveis com os caminhos imagens ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/marcel-portfolio/raw/6721ec536e4cdd14fa4748889c45cfd9ef3a00c0/img/img_marcel.png"
@@ -43,6 +43,33 @@ projetos = [
         "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
         "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
         "tec_prohjeto": "Python, Streamlit, CSS"
+    }
+]
+
+certificacoes = [
+    {
+        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/7d7f1e5dbff9ed1d6370e929c5ae8e4440233a58/img/img_certificacao_microsoft.png",
+        "tp_cert": "Microsoft Certified",
+        "nm_cert": "Azure Fundamentals",
+        "link_cert": ""
+    },
+    {
+        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified Professional",
+        "nm_cert": "Advanced Programming Using SAS 9.4",
+        "link_cert": "https://www.credly.com/badges/3e324c11-c28b-46aa-be33-0e780f9a4fcd/linked_in_profile"
+    },
+    {
+        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified Specialist",
+        "nm_cert": "Base Programming Using SAS 9.4",
+        "link_cert": "https://www.credly.com/badges/603b630f-203c-43a8-a568-6384de851889/linked_in"
+    },
+    {
+        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified",
+        "nm_cert": "Base Programmer for SAS 9",
+        "link_cert": "https://www.youracclaim.com/badges/b2d53d81-f4d4-4f24-af0a-322c2b673020/linked_in_profile"
     }
 ]
 
@@ -113,3 +140,6 @@ with st.container(border=0):
 
     # Adicionando quadro de projetos
     projects(projetos)
+
+    # Adicionando quadro de certificações
+    certification(certificacoes)
