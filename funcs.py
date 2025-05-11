@@ -43,7 +43,7 @@ def projects(v_projetos):
                         <div class="project-links">
                             <a href="{projeto['link_projeto']}" target="_blank">🔗GitHub</a>
                         </div>
-                    </div>
+                    </div><br>
                 """, unsafe_allow_html=True)
          
 
@@ -61,7 +61,7 @@ def certification(v_certificacoes):
                         </a>
                         <h5>{cert['tp_cert']}</h5>
                         <h6>{cert['nm_cert']}</h6>
-                    </div>
+                    </div><br>
                 """, unsafe_allow_html=True)                     
 
 
