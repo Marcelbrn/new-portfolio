@@ -36,6 +36,18 @@ div[data-testid="stHeadingWithActionElements"] > * {
     /* padding-bottom: 0 !important; */
 }
 
+/* Removendo labels e reduzir espaçamento das textinput/textarea do email*/
+/* Remove o espaço reservado do label */
+div[data-testid="stTextInput"] > label,
+div[data-testid="stTextArea"] > label {
+    display: none;
+}
+
+/* Reduz espaço vertical entre os campos */
+.element-container:has(textarea), .element-container:has(input) {
+    margin-bottom: 0.5rem !important;
+}
+
 
 
 :root {
@@ -45,7 +57,7 @@ div[data-testid="stHeadingWithActionElements"] > * {
     --text-light: #f8fafc; */
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-/**/
+
 .container {
     display: flex;
     flex-direction: column;
@@ -137,6 +149,7 @@ body {
     border: none;
 }
 
+
 /* quadro de projetos */
 .project-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
@@ -193,6 +206,7 @@ body {
     text-decoration: underline;
 }
 
+
 /* quadro de certificação */
 .cert-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
@@ -229,4 +243,31 @@ body {
 .cert-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* quadro de contato */
+[data-testid="stForm"] {border: 0px}
+
+.contact-description {
+    margin-left: 2.7rem;
+    font-size: 18px;
+    color: #374151;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: left;
+}
+.contact-container {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.contact-image {
+    padding: 1.0rem;
+    max-width: 330px;
+    max-height: 330px;
+    width: auto;
+    height: auto;
 }

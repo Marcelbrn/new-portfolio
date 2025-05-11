@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from funcs import load_css, technical_skills, projects, certification
+from funcs import load_css, technical_skills, projects, certification, contact_form
 
 # ===== Configurando variáveis com os caminhos imagens ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/marcel-portfolio/raw/6721ec536e4cdd14fa4748889c45cfd9ef3a00c0/img/img_marcel.png"
@@ -143,3 +143,6 @@ with st.container(border=0):
 
     # Adicionando quadro de certificações
     certification(certificacoes)
+
+    # Contatos
+    contact_form()
