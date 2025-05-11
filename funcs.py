@@ -67,58 +67,43 @@ def certification(v_certificacoes):
 
 # ===== Definindo função para gerar quadro de contato ===== #
 def contact_form():
-    v_img_carta  = "https://github.com/Marcelbrn/Portfolio/raw/e2cb95bec7bb3ee4f86bad18cc6a74cfed0ebc42/img/img_carta_gpt5.png"
 
+    # Texto
     st.markdown("### 📬 Entre em Contato")
-
     st.markdown(
         """
-            <div class="contact-description">
-                Fique à vontade para enviar uma mensagem. Responderei o mais breve possível!
-            </div>
-        """, unsafe_allow_html=True)
-
-    # Inicializa session_state
-    for campo in ["nome_input", "email_input", "mensagem_input", "limpar_campos", "mensagem_enviada"]:
-        if campo not in st.session_state:
-            st.session_state[campo] = "" if campo != "limpar_campos" and campo != "mensagem_enviada" else False
-
-    # Limpa os campos se flag estiver ativada
-    if st.session_state.limpar_campos:
-        st.session_state.nome_input = ""
-        st.session_state.email_input = ""
-        st.session_state.mensagem_input = ""
-        st.session_state.limpar_campos = False
+            <div class="contact-description">Fique à vontade para enviar uma mensagem. Responderei o mais breve possível!</div>
+        """, unsafe_allow_html=True
+    )
 
     col1, col2 = st.columns([2, 2])
-
+    
+    # Formulário
     with col1:
-        with st.form(key="formulario_contato"):
-            nome = st.text_input("", placeholder="Nome", key="nome_input")
-            email = st.text_input("", placeholder="Email", key="email_input")
-            mensagem = st.text_area("", placeholder="Mensagem", key="mensagem_input")
-            botao = st.form_submit_button("Enviar")
+        st.markdown(
+            """
+            <div class="form-card">
+                <form action="https://formsubmit.co/marcelbrn@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://localhost:8502/">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input class="form-input" type="text" name="name" placeholder="Nome" required>
+                    <input class="form-input" type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-textarea" name="message" placeholder="Mensagem" rows="4" required></textarea>
+                    <button type="submit" class="form-button">Enviar</button>
+                </form>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
-            if botao:
-                if not nome or not email or not mensagem:
-                    st.warning("⚠️ Por favor, preencha todos os campos antes de enviar.")
-                    time.sleep(3)
-                    st.session_state.mensagem_enviada = False
-                else:
-                    # Simula envio de e-mail (ou processa backend)
-                    st.session_state.limpar_campos = True
-                    st.session_state.mensagem_enviada = True
-
-                    # Mostra toast e reseta após 3s
-                    if st.session_state.mensagem_enviada:
-                        st.success("✅ Sua mensagem foi enviada com sucesso!")
-                        time.sleep(3)
-                        st.session_state.mensagem_enviada = False
-
+    # Imagem
+    v_carta = "https://github.com/Marcelbrn/Portfolio/raw/e2cb95bec7bb3ee4f86bad18cc6a74cfed0ebc42/img/img_carta_gpt5.png"
+    
     with col2:
         st.markdown(
             f"""
                 <div class="contact-container">
-                    <img src="{v_img_carta}" class="contact-image" alt="Contact illustration">
+                    <img src="{v_carta}" class="contact-image" alt="Contact illustration">
                 </div>
             """, unsafe_allow_html=True)

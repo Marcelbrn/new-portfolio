@@ -247,27 +247,64 @@ body {
 
 
 /* quadro de contato */
-[data-testid="stForm"] {border: 0px}
-
 .contact-description {
-    margin-left: 2.7rem;
-    font-size: 18px;
+    padding: 0rem;
+    padding-left: 2.8rem;
+    font-size: 16px;
     color: #374151;
     font-family: 'Segoe UI', sans-serif;
     text-align: left;
 }
 .contact-container {
-    padding-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
+    padding: 0.8rem;
 }
-
 .contact-image {
-    padding: 1.0rem;
-    max-width: 330px;
-    max-height: 330px;
+    padding: 0rem;
+    max-width: 300px;
+    max-height: 300px;
     width: auto;
     height: auto;
+}
+.form-card {
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+    border: 3px solid transparent;
+}
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    font-family: 'Segoe UI', sans-serif;
+}
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.55rem 0.55rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F0F2F6;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.form-button {
+    background: linear-gradient(to right, #10b981, #06b6d4); /* verde para ciano */
+    border: none;
+    border-radius: 7px;
+    padding: 0.45rem 0.8rem;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.form-button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
 }
