@@ -29,30 +29,10 @@ projetos = [
         "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
         "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
         "tec_prohjeto": "Python, Streamlit, CSS"
-    },
-    {
-        "nm_projeto": "Portfólio",
-        "desc_projeto": "Implementação de página web para apresentação de portfólio profissional, destacando projetos, habilidades e experiências.",
-        "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
-        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/322893482f15ac1d2237667e0a568d1abe5d9797/img/img_portfolio_gpt5.png",
-        "tec_prohjeto": "Python, Streamlit, CSS"
-    },
-    {
-        "nm_projeto": "Portfólio",
-        "desc_projeto": "Implementação de página web para apresentação de portfólio profissional, destacando projetos, habilidades e experiências fjsdljlfasdd jlfasdjlk  jfsdjlkjfsadl jflsdjjfksdjhk bkjerwiurkjlksd jfsdlj.",
-        "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
-        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
-        "tec_prohjeto": "Python, Streamlit, CSS"
     }
 ]
 
 certificacoes = [
-    {
-        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/7d7f1e5dbff9ed1d6370e929c5ae8e4440233a58/img/img_certificacao_microsoft.png",
-        "tp_cert": "Microsoft Certified",
-        "nm_cert": "Azure Fundamentals",
-        "link_cert": ""
-    },
     {
         "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
         "tp_cert": "SAS Certified Professional",

@@ -51,10 +51,6 @@ div[data-testid="stTextArea"] > label {
 
 
 :root {
-    /* --primary-color: #1a365d;
-    --secondary-color: #2d547d;
-    --accent-color: #38bdf8;
-    --text-light: #f8fafc; */
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
