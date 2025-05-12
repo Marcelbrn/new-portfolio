@@ -6,15 +6,11 @@ header[data-testid="stHeader"] {
 /* Formata containers */
 div[data-testid="stVerticalBlock"] > div:first-child {
     max-width: 100%;
-    /* margin: 0 auto;  */
-    /* padding: 1rem 1rem;  */
-    /* background-color: white; */
     background-color: transparent;
     /* border: 1px solid gray; */
     border-radius: 10px;
     margin-top: 0rem !important;
     overflow: hidden;
-    /* padding: 1rem 1rem !important; */
 }
 /* Remove margens extras padrão do body do Streamlit e adiciona cor de fundo cinza claro*/  
 section.stMain > div {
@@ -36,16 +32,8 @@ div[data-testid="stHeadingWithActionElements"] > * {
     /* padding-bottom: 0 !important; */
 }
 
-/* Removendo labels e reduzir espaçamento das textinput/textarea do email*/
-/* Remove o espaço reservado do label */
-div[data-testid="stTextInput"] > label,
-div[data-testid="stTextArea"] > label {
-    display: none;
-}
-
-/* Reduz espaço vertical entre os campos */
-.element-container:has(textarea), .element-container:has(input) {
-    margin-bottom: 0.5rem !important;
+body {
+    background-color: #f9f9f9;
 }
 
 
@@ -54,6 +42,7 @@ div[data-testid="stTextArea"] > label {
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Painel perfil */
 .container {
     display: flex;
     flex-direction: column;
@@ -129,16 +118,11 @@ div[data-testid="stTextArea"] > label {
     object-fit: cover;
 }
 
-
-body {
-    background-color: #f9f9f9;
-}
-
 /* quadro habilidades */
 .skill-card {
     background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 40%);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.0rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;

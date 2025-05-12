@@ -124,10 +124,10 @@ with st.container(border=0):
     # Adicionando quadro de certificações
     certification(certificacoes)
 
-    # Contatos
+    # Adicionando Contatos
     contact_form()
 
-    # Rodapé
+    # Adicionando o Rodapé
     st.markdown(
         """
             <hr style='margin-top: 2rem; margin-bottom: 1rem;'>
