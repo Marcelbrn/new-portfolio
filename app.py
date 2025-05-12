@@ -27,26 +27,26 @@ projetos = [
         "nm_projeto": "Portfólio",
         "desc_projeto": "Projeto criado para apresentar minhas experiências, certificações e habilidades técnicas de forma interativa por meio de projetos com o objetivo de destacar meu perfil profissional de maneira clara, organizada e atrativa.",
         "link_projeto": "https://github.com/Marcelbrn/new-portfolio/tree/main",
-        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/abb39375456090922cf800a4d819b812f56239be/img/img_portfolio_gpt2.png",
+        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/444abf749b2a25dfa81f2add89b65cce8574ab49/img/img_portfolio_gpt2.png",
         "tec_prohjeto": "Python, Streamlit, CSS"
     }
 ]
 
 certificacoes = [
     {
-        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/444abf749b2a25dfa81f2add89b65cce8574ab49/img/img_certificacao_sas.png",
         "tp_cert": "SAS Certified Professional",
         "nm_cert": "Advanced Programming Using SAS 9.4",
         "link_cert": "https://www.credly.com/badges/3e324c11-c28b-46aa-be33-0e780f9a4fcd/linked_in_profile"
     },
     {
-        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/444abf749b2a25dfa81f2add89b65cce8574ab49/img/img_certificacao_sas.png",
         "tp_cert": "SAS Certified Specialist",
         "nm_cert": "Base Programming Using SAS 9.4",
         "link_cert": "https://www.credly.com/badges/603b630f-203c-43a8-a568-6384de851889/linked_in"
     },
     {
-        "img_cert": "https://github.com/Marcelbrn/portfolio/raw/8d7506d39ae93358dd1ed90503e2bdb0cae09f3b/img/img_certificacao_sas.png",
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/444abf749b2a25dfa81f2add89b65cce8574ab49/img/img_certificacao_sas.png",
         "tp_cert": "SAS Certified",
         "nm_cert": "Base Programmer for SAS 9",
         "link_cert": "https://www.youracclaim.com/badges/b2d53d81-f4d4-4f24-af0a-322c2b673020/linked_in_profile"
