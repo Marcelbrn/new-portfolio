@@ -200,6 +200,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    width: 100%;
     min-width: 300px;
     max-width: 300px;
     max-height: 350px;
