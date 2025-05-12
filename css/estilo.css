@@ -32,6 +32,11 @@ div[data-testid="stHeadingWithActionElements"] > * {
     /* padding-bottom: 0 !important; */
 }
 
+/* Remove ícones automáticos de links externos */
+a[target="_blank"]::after {
+    display: none !important;
+}
+
 body {
     background-color: #f9f9f9;
 }
