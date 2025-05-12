@@ -1,7 +1,6 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-import time
 
 # ===== Definindo função para gerar estilo css personalizado da página ===== #
 def load_css(v_path_css):
@@ -84,7 +83,7 @@ def contact_form():
             """
             <div class="form-card">
                 <form action="https://formsubmit.co/marcelbrn@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="http://localhost:8502/">
+                    <input type="hidden" name="_next" value="http://localhost:8502/?success=true">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input class="form-input" type="text" name="name" placeholder="Nome" required>
@@ -97,9 +96,15 @@ def contact_form():
             unsafe_allow_html=True
         )
 
+        # Confirmação de envio do email
+        query_params = st.query_params
+
+        if "success" in query_params:
+            st.success("✅ Sua mensagem foi enviada com sucesso!")
+
     # Imagem
     v_carta = "https://github.com/Marcelbrn/Portfolio/raw/e2cb95bec7bb3ee4f86bad18cc6a74cfed0ebc42/img/img_carta_gpt5.png"
-    
+
     with col2:
         st.markdown(
             f"""
