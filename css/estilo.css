@@ -200,8 +200,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    min-height: 350px;
-    max-height: 355px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 360px;
+    max-height: 360px;
     overflow: hidden;
 }
 .cert-card h5 {
