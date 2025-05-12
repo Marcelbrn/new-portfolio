@@ -103,7 +103,7 @@ def contact_form():
             st.success("✅ Sua mensagem foi enviada com sucesso!")
 
     # Imagem
-    v_carta = "https://github.com/Marcelbrn/Portfolio/raw/e2cb95bec7bb3ee4f86bad18cc6a74cfed0ebc42/img/img_carta_gpt5.png"
+    v_carta = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_carta_gpt5.png"
 
     with col2:
         st.markdown(

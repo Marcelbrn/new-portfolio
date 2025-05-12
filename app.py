@@ -5,9 +5,9 @@ from PIL import Image
 from funcs import load_css, technical_skills, projects, certification, contact_form
 
 # ===== Configurando variáveis com os caminhos imagens e links ===== #
-v_img_perfil         = "https://github.com/Marcelbrn/marcel-portfolio/raw/6721ec536e4cdd14fa4748889c45cfd9ef3a00c0/img/img_marcel.png"
-v_img_linkedin       = "https://github.com/Marcelbrn/Portfolio/raw/686a9cca66a2d1c4e1ece9edcfa641d0dd328a4e/img/img_icon_linkedin.png"
-v_img_github         = "https://github.com/Marcelbrn/Portfolio/raw/686a9cca66a2d1c4e1ece9edcfa641d0dd328a4e/img/img_icon_github.png"
+v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_marcel.png"
+v_img_linkedin       = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_icon_linkedin.png"
+v_img_github         = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_icon_github.png"
 v_img_plano_de_fundo = Image.open("img/img_plano_de_fundo.png")
 v_img_txt_sobre      = Image.open("img/img_dados_cgpt.png")
 v_link_linkedin      = "https://www.linkedin.com/in/marcel-bruno/"
