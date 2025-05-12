@@ -32,8 +32,7 @@ div[data-testid="stHeadingWithActionElements"] > * {
     /* padding-bottom: 0 !important; */
 }
 
-/* Remove ícones automáticos de links externos */
-a[target="_blank"]::after {
+img + svg {
     display: none !important;
 }
 
