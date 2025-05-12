@@ -202,8 +202,8 @@ body {
     height: 100%;
     min-width: 300px;
     max-width: 300px;
-    max-height: 360px;
-    max-height: 360px;
+    max-height: 350px;
+    max-height: 350px;
     overflow: hidden;
 }
 .cert-card h5 {
