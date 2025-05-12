@@ -1,144 +1,154 @@
+/* ========== GERAL ========== */
 
 /* Oculta o header padrão do Streamlit */
 header[data-testid="stHeader"] {
     display: none;
 }
-/* Formata containers */
-div[data-testid="stVerticalBlock"] > div:first-child {
-    max-width: 100%;
-    background-color: transparent;
-    /* border: 1px solid gray; */
-    border-radius: 10px;
-    margin-top: 0rem !important;
-    overflow: hidden;
-}
-/* Remove margens extras padrão do body do Streamlit e adiciona cor de fundo cinza claro*/  
-section.stMain > div {
-    padding-top: 0rem;
-    /* border: 1px solid red; */
-    background-color: #f9f9f9;
-}
-/*Ajustando o tamanho do conteúdo da página*/
-div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child{
-    max-width: 1260px;
-    margin: 0 auto;
-    padding: 1rem;
-}
 
-/* Também remove margem/padding do pai imediato (caso exista) */
-div[data-testid="stHeadingWithActionElements"] > * {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    /* padding-bottom: 0 !important; */
-}
-
+/* Remove margens padrão do corpo e define cor de fundo */
 body {
     background-color: #f9f9f9;
 }
 
-
+section.stMain > div {
+    padding-top: 0;
+    background-color: #f9f9f9;
+}
 
 :root {
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Painel perfil */
+/* Limita largura principal e centraliza */
+div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Remove espaçamento superior de headings */
+div[data-testid="stHeadingWithActionElements"] > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Container principal */
+div[data-testid="stVerticalBlock"] > div:first-child {
+    max-width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 0 !important;
+    overflow: hidden;
+}
+
+/* ========== PERFIL ========== */
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .background-container {
     width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
 }
+
 .background-image {
     width: 100%;
-    max-height: 150px;
     max-width: 1160px;
+    max-height: 150px;
     object-fit: cover;
 }
-.icon-container {
-    position: absolute;
-    bottom: 20px; /* Valor base para o alinhamento vertical */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-}
-.linkedin-icon {
-    left: 36%;
-    bottom: -12px; /* Ajuste fino para alinhar verticalmente com o da direita */
-}
-.github-icon {
-    right: 36%;
-}
-.icon-circle {
-    width: 35vw; /* ou 30%, depende do layout desejado */
-    max-width: 50px; /* limite máximo */
-    min-width: 30px;       /* (Opcional) Limite mínimo em telas pequenas */
-    aspect-ratio: 1 / 1; /* mantém formato circular */
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 1px solid white; /* Borda para visualização */
-}
-.icon-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
 .profile-circle {
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 17%; /* ou use % baseado no container */
+    width: 17%;
     max-width: 250px;
     min-width: 100px;
-    aspect-ratio: 1 / 1; /* mantém o formato circular */
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-color: white;
+    border: 2px solid white;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 2px solid white;
-    z-index: 3;
 }
+
 .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* quadro habilidades */
+/* Ícones redes sociais */
+.icon-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.linkedin-icon {
+    left: 36%;
+    bottom: -12px;
+}
+
+.github-icon {
+    right: 36%;
+}
+
+.icon-circle {
+    width: 35vw;
+    max-width: 50px;
+    min-width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ========== CARDS ========== */
+
+/* Habilidades */
 .skill-card {
     background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 40%);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
     border: none;
 }
 
-
-/* quadro de projetos */
+/* Projetos */
 .project-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    border: none;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -148,24 +158,27 @@ body {
     max-height: 475px;
     overflow: hidden;
 }
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+
 .project-card h5 {
     margin: 0.5rem 0;
 }
+
 .project-card p {
     flex-grow: 1;
     margin: 0.5rem 0;
     text-align: justify;
-
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* Número máximo de linhas visíveis */
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .project-image {
     width: 100%;
     max-height: 180px;
@@ -173,27 +186,29 @@ body {
     border-radius: 8px;
     margin-bottom: 0.75rem;
 }
+
 .project-links {
     margin-top: auto;
 }
+
 .project-links a {
     margin: 0 0.5rem;
     text-decoration: none;
     color: #0073e6;
     font-weight: bold;
 }
+
 .project-links a:hover {
     text-decoration: underline;
 }
 
-
-/* quadro de certificação */
+/* Certificações */
 .cert-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
     border-radius: 12px;
     padding: 1.3rem;
     margin-bottom: 1.3rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
     text-align: center;
     display: flex;
@@ -204,15 +219,23 @@ body {
     max-height: 350px;
     overflow: hidden;
 }
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
 .cert-card h5 {
     margin: 0.5rem 0 0;
     font-size: 1.1rem;
 }
+
 .cert-card h6 {
     margin: 0.5rem 0 0;
     font-size: 0.9rem;
     color: #555;
 }
+
 .cert-image {
     width: 100%;
     max-height: 160px;
@@ -220,41 +243,40 @@ body {
     border-radius: 8px;
     margin-bottom: 1rem;
 }
-.cert-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+
+/* ========== CONTATO ========== */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    height: 100%;
 }
 
-
-/* quadro de contato */
 .contact-description {
-    padding: 0rem;
     padding-left: 2.8rem;
     font-size: 16px;
     color: #374151;
     font-family: 'Segoe UI', sans-serif;
     text-align: left;
 }
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0.8rem;
-}
+
 .contact-image {
-    padding: 0rem;
     max-width: 300px;
     max-height: 300px;
     width: auto;
     height: auto;
 }
+
+/* Formulário */
 .form-card {
     padding: 1rem;
     border-radius: 10px;
     max-width: 600px;
     border: 3px solid transparent;
 }
+
 .form-title {
     font-size: 26px;
     font-weight: 600;
@@ -263,17 +285,20 @@ body {
     color: #1f2937;
     font-family: 'Segoe UI', sans-serif;
 }
-.form-input, .form-textarea {
+
+.form-input,
+.form-textarea {
     width: 100%;
-    padding: 0.55rem 0.55rem;
+    padding: 0.55rem;
     border: none;
     border-radius: 10px;
     background-color: #F0F2F6;
     margin-bottom: 1rem;
     font-size: 16px;
 }
+
 .form-button {
-    background: linear-gradient(to right, #10b981, #06b6d4); /* verde para ciano */
+    background: linear-gradient(to right, #10b981, #06b6d4);
     border: none;
     border-radius: 7px;
     padding: 0.45rem 0.8rem;
@@ -284,6 +309,7 @@ body {
     display: block;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
 .form-button:hover {
     transform: scale(1.03);
     opacity: 0.9;
