@@ -20,7 +20,7 @@ section.stMain > div {
 }
 /*Ajustando o tamanho do conteúdo da página*/
 div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child{
-    max-width: 1360px;
+    max-width: 1370px;
     margin: 0 auto;
     padding: 1rem;
 }
