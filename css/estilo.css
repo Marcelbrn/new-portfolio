@@ -40,13 +40,6 @@ svg[data-testid="stHeaderActionElements"] {
     display: none !important;
 }
 
-/* xxx */
-div[data-testid="stHorizontalBlock"] > div:first-child {
-    margin: 0 !important;
-    padding: 0 !important;
-    /* padding-bottom: 0 !important; */
-}
-
 
 /* Remove o ícone de link de imagens clicáveis (Streamlit) */
 img + svg [data-testid="stHeaderActionElements"] {
@@ -218,6 +211,7 @@ img + svg [data-testid="stHeaderActionElements"] {
     height: 100%;
     min-height: 330px;
     max-height: 330px;
+    width: 270px;
     overflow: hidden;
 }
 .cert-card h5 {
