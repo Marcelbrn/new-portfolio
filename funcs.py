@@ -49,7 +49,7 @@ def projects(v_projetos):
 # ===== Definindo função para gerar quadro de certificações ===== #
 def certification(v_certificacoes):
     st.markdown("### 🏅 Certificações")
-    cols = st.columns(4)
+    cols = st.columns(4, gap="small")
     for idx, cert in enumerate(v_certificacoes):
         with cols[idx % 4]:
             st.markdown(
