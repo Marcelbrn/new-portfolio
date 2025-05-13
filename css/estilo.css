@@ -22,7 +22,7 @@ section.stMain > div {
 div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child{
     max-width: 1385px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 /* Também remove margem/padding do pai imediato (caso exista) */
