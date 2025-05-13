@@ -250,7 +250,8 @@ body {
     height: auto;
 }
 .form-card {
-    padding: 2.7rem;
+    /* padding: 1rem; */
+    padding: 2.7rem 1rem;
     border-radius: 10px;
     max-width: 600px;
     border: 3px solid transparent;
