@@ -37,8 +37,8 @@ body {
 }
 
 div[data-testid="stHorizontalBlock"] > div {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
 }
 
 :root {
