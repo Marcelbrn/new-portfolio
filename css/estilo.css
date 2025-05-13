@@ -36,7 +36,7 @@ body {
     background-color: #f9f9f9;
 }
 
-div[data-testid="stHeaderActionElements"] > * {
+svg[data-testid="stHeaderActionElements"] > * {
     display: none !important;
 }
 
@@ -202,16 +202,16 @@ div[data-testid="stHeaderActionElements"] > * {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 330px;
+    max-height: 330px;
     overflow: hidden;
 }
 .cert-card h5 {
-    margin: 0.5rem 0 0;
+    margin: 0rem 0 0;
     font-size: 1.1rem;
 }
 .cert-card h6 {
-    margin: 0.5rem 0 0;
+    margin: 0rem 0 0;
     font-size: 0.9rem;
     color: #555;
 }
