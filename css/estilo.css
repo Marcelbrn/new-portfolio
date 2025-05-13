@@ -36,7 +36,7 @@ body {
     background-color: #f9f9f9;
 }
 
-img + svg {
+div[data-testid="stHeaderActionElements"] > div:first-child {
     display: none !important;
 }
 
