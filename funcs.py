@@ -12,7 +12,7 @@ def load_css(v_path_css):
 def technical_skills(v_habilidades):
     st.markdown("### 🛠️ Habilidades Técnicas")
 
-    cols = st.columns(4)
+    cols = st.columns(4, gap="small")
     for idx, (title, items) in enumerate(v_habilidades.items()):
         with cols[idx]:
             v_lista_habilidades = "".join(f"<li>{item}</li>" for item in items)
