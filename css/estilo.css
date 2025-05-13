@@ -36,15 +36,6 @@ body {
     background-color: #f9f9f9;
 }
 
-svg[data-testid="stHeaderActionElements"] {
-    display: none !important;
-}
-
-
-/* Remove o ícone de link de imagens clicáveis (Streamlit) */
-img + svg [data-testid="stHeaderActionElements"] {
-    display: none !important;
-}
 
 
 :root {
@@ -200,8 +191,8 @@ img + svg [data-testid="stHeaderActionElements"] {
 .cert-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
     border-radius: 12px;
-    padding: 1.3rem;
-    margin-bottom: 1.3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     text-align: center;
@@ -211,7 +202,6 @@ img + svg [data-testid="stHeaderActionElements"] {
     height: 100%;
     min-height: 330px;
     max-height: 330px;
-    width: 270px;
     overflow: hidden;
 }
 .cert-card h5 {
