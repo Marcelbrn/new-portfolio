@@ -5,7 +5,7 @@ header[data-testid="stHeader"] {
 }
 /* Formata containers */
 div[data-testid="stVerticalBlock"] > div:first-child {
-    max-width: 80%;
+    max-width: 90%;
     background-color: transparent;
     /* border: 1px solid gray; */
     border-radius: 10px;
