@@ -6,8 +6,8 @@ header[data-testid="stHeader"] {
 /* Formata containers */
 div[data-testid="stVerticalBlock"] > div:first-child {
     width: 100%;
-    min-width: 260rem;
-    max-width: 260rem;
+    min-width: 60rem;
+    max-width: 60rem;
     background-color: transparent;
     /* border: 1px solid gray; */
     border-radius: 10px;
