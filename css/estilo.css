@@ -10,6 +10,7 @@ div[data-testid="stVerticalBlock"] > div:first-child {
     /* border: 1px solid gray; */
     border-radius: 10px;
     margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
     overflow: hidden;
 }
 div[data-testid="stHorizontalBlock"] > div:first-child {
