@@ -11,6 +11,7 @@ div[data-testid="stVerticalBlock"] > div:first-child {
     border-radius: 10px;
     margin-top: 0rem !important;
     overflow: hidden;
+    padding-right: 0 !important;
 }
 /* Remove margens extras padrão do body do Streamlit e adiciona cor de fundo cinza claro*/  
 section.stMain > div {
