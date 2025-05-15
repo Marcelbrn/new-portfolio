@@ -133,8 +133,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: none;
-    min-width: 260rem;
-    max-width: 260rem;
 }
 
 
