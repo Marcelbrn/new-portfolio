@@ -5,7 +5,7 @@ header[data-testid="stHeader"] {
 }
 /* Formata containers */
 div[data-testid="stVerticalBlock"] > div:first-child {
-    max-width: 90%;
+    max-width: 100%;
     background-color: transparent;
     /* border: 1px solid gray; */
     border-radius: 10px;
@@ -20,9 +20,9 @@ section.stMain > div {
 }
 /*Ajustando o tamanho do conteúdo da página*/
 div[data-testid="stVerticalBlockBorderWrapper"] > div:first-child{
-    max-width: 1385px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 0rem;
+    padding: 1rem;
 }
 
 /* Também remove margem/padding do pai imediato (caso exista) */
@@ -191,8 +191,8 @@ body {
 .cert-card {
     background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
     border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.3rem;
+    margin-bottom: 1.3rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     text-align: center;
@@ -209,7 +209,7 @@ body {
     font-size: 1.1rem;
 }
 .cert-card h6 {
-    margin: 0.2rem 0 0;
+    margin: 0.5rem 0 0;
     font-size: 0.9rem;
     color: #555;
 }
@@ -250,8 +250,7 @@ body {
     height: auto;
 }
 .form-card {
-    /* padding: 1rem; */
-    padding: 1rem 2.7rem;
+    padding: 1rem;
     border-radius: 10px;
     max-width: 600px;
     border: 3px solid transparent;
