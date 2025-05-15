@@ -198,7 +198,7 @@ body {
     border-radius: 12px;
     /* padding: 1.3rem; */
     padding: 0.5rem 0.1rem 0rem 0.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     text-align: center;
