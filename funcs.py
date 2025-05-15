@@ -50,7 +50,7 @@ def projects(v_projetos):
 def certification(v_certificacoes):
     st.markdown("### 🏅 Certificações")
     #cols = st.columns(4, gap="small")
-    cols = st.columns([0.22, 0.22, 0.22, 0.22])
+    cols = st.columns([0.24, 0.24, 0.24, 0.24])
     for idx, cert in enumerate(v_certificacoes):
         with cols[idx % 4]:
             st.markdown(
