@@ -15,6 +15,7 @@ div[data-testid="stVerticalBlock"] > div:first-child {
 }
 div[data-testid="stHorizontalBlock"] > div:first-child {
     margin: 0rem !important;
+    min-height: 260px;
 }
 
 
