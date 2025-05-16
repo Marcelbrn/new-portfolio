@@ -47,6 +47,9 @@ body {
     display: none;
 }
 */
+div[data-testid="StyledLinkIconContainer"] > a:first-child {
+    display: none !important;
+}
 
 :root {
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
