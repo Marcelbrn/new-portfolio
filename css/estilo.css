@@ -47,8 +47,8 @@ body {
     display: none;
 }
 */
-div[data-testid="StyledLinkIconContainer"] > a:first-child {
-    display: none !important;
+[data-testid='stHeaderActionElements'] {
+    display: none;
 }
 
 :root {
