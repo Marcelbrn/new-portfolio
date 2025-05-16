@@ -162,7 +162,7 @@ body {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 .project-card h4 {
-    margin: 0.5rem 0 0 0.2rem;
+    margin: 0.5rem 0;
     padding-bottom: 0 !important;
 }
 .project-card p {
