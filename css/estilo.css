@@ -42,11 +42,11 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Remove a ancora que aparece ao lado dos textos */
+/* Remove a ancora que aparece ao lado dos textos, NA VERDADE REMOVE TODOS OS LINKS *//*
 .stApp a:first-child {
     display: none;
 }
-
+*/
 
 :root {
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
