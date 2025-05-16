@@ -132,7 +132,7 @@ body {
     background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 40%);
     border-radius: 12px;
     /* padding: 1rem 0.5rem 1rem 1rem; */
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
