@@ -167,7 +167,7 @@ body {
 }
 .project-card p {
     flex-grow: 1;
-    margin: 0.2rem 0 0.7rem;
+    margin: 0.2rem 0 0.9rem;
     text-align: justify;
 
     display: -webkit-box;
