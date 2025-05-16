@@ -10,7 +10,7 @@ def load_css(v_path_css):
 
 # ===== Definindo função para gerar quadro de habilidades técnicas ===== #
 def technical_skills(v_habilidades):
-    st.markdown("### 🛠️ Habilidades Técnicas")
+    st.markdown("### 🛠️ Habilidades Técnicas", anchor=None)
 
     cols = st.columns(4, gap="small")
     for idx, (title, items) in enumerate(v_habilidades.items()):
@@ -27,7 +27,7 @@ def technical_skills(v_habilidades):
 
 # ===== Definindo função para gerar quadro de projetos ===== #
 def projects(v_projetos):
-    st.markdown("### 👨🏻‍💻 Projetos")
+    st.markdown("### 👨🏻‍💻 Projetos", anchor=None)
     cols = st.columns(3, gap="large")
     for idx, projeto in enumerate(v_projetos):
         with cols[idx % 3]:
@@ -48,7 +48,7 @@ def projects(v_projetos):
 
 # ===== Definindo função para gerar quadro de certificações ===== #
 def certification(v_certificacoes):
-    st.markdown("### 🏅 Certificações")
+    st.markdown("### 🏅 Certificações", anchor=None)
     cols = st.columns(4, gap="small")
     # cols = st.columns([0.24, 0.24, 0.24, 0.24])
     for idx, cert in enumerate(v_certificacoes):
@@ -69,7 +69,7 @@ def certification(v_certificacoes):
 def contact_form():
 
     # Texto
-    st.markdown("### 📬 Entre em Contato")
+    st.markdown("### 📬 Entre em Contato", anchor=None)
     st.markdown(
         """
             <div class="contact-description">Fique à vontade para enviar uma mensagem. Responderei o mais breve possível!</div>
