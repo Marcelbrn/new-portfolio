@@ -164,6 +164,7 @@ body {
 .project-card h4 {
     margin: 0.5rem 0;
     padding-bottom: 0 !important;
+    padding-top: 0 !important;
 
 }
 .project-card p {
