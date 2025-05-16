@@ -42,11 +42,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Remove a ancora que aparece ao lado dos textos, NA VERDADE REMOVE TODOS OS LINKS *//*
-.stApp a:first-child {
-    display: none;
-}
-*/
+/* Remove a ancora que aparece ao lado dos textos */
 [data-testid='stHeaderActionElements'] {
     display: none;
 }
@@ -214,8 +210,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 250px;
+    max-height: 250px;
     overflow: hidden;
 }
 .cert-card h5 {
