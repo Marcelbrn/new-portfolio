@@ -36,9 +36,9 @@ def projects(v_projetos):
                 f"""
                     <div class="project-card">
                         <img src="{projeto['img_projeto']}" class="project-image"/>
-                        <h5>{projeto['nm_projeto']}</h5>
+                        <h4>{projeto['nm_projeto']}</h4>
                         <p>{projeto['desc_projeto']}</p>
-                        <p><b>Stack:</b> {projeto['tec_prohjeto']}</p>
+                        <p><b>Stack:</b> {projeto['tec_projeto']}</p>
                         <div class="project-links">
                             <a href="{projeto['link_projeto']}" target="_blank">🔗GitHub</a>
                         </div>

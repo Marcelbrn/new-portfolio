@@ -28,7 +28,7 @@ projetos = [
         "desc_projeto": "Projeto criado para apresentar minhas experiências, certificações e habilidades técnicas de forma interativa por meio de projetos com o objetivo de destacar meu perfil profissional de maneira clara, organizada e atrativa.",
         "link_projeto": "https://github.com/Marcelbrn/Portfolio/tree/main",
         "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/444abf749b2a25dfa81f2add89b65cce8574ab49/img/img_portfolio_gpt2.png",
-        "tec_prohjeto": "Python, Streamlit, CSS"
+        "tec_projeto": "Python, Streamlit, CSS"
     }
 ]
 
